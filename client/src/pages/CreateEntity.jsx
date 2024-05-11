@@ -40,6 +40,11 @@ const CreateEntity = () => {
         `${process.env.REACT_APP_BASE_URL}/entity/create-entity`,
         entity
       );
+      setAttribute({ name: "", type: "" });
+      setEntity({
+        entityName: "",
+        attributes: [],
+      })
       console.log(data);
     } catch (error) {
       console.log(error);

@@ -39,7 +39,7 @@ const Data = () => {
   }, [dataLength]);
   return (
     <div className=" grid grid-cols-1 w-full content-start ">
-      <div className="flex flex-row justify-end items-end">
+      <div className="flex flex-row justify-end items-end ">
         <DeleteEntries dataLength={dataLength} setDataLength={setDataLength} />
         <UpdateEntries />
       </div>
